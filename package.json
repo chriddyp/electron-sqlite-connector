@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "asar": "^0.7.2",
+    "babel": "^6.5.2",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-react": "^6.5.0",
+    "electron-prebuilt": "^0.36.0",
+    "fs-jetpack": "^0.7.0",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-util": "^3.0.6",
+    "q": "^1.4.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "rollup": "^0.21.0",
+    "rollup-plugin-babel": "^2.3.9",
+    "tree-kill": "^0.1.1",
+    "yargs": "^3.15.0"
+  },
+  "optionalDependencies": {
+    "appdmg": "^0.3.2",
+    "rcedit": "^0.3.0"
+  },
+  "scripts": {
+    "postinstall": "cd app && npm install",
+    "build": "gulp build",
+    "release": "gulp release --env=production",
+    "start": "node ./tasks/start",
+    "test": "node ./tasks/start --env=test",
+    "install-native": "node ./tasks/install_native_module"
+  }
+}
